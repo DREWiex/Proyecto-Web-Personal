@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Andrés León - Fotografía | Contacto</title>
+</head>
+<body>
+    <header>
+        <h1>ANDRÉS LEÓN</h1>
+        <h3><em>Fotografía</em></h3>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a> |&nbsp;</li>
+            <li><a href="about.html">Biografía</a> |&nbsp;</li>
+            <li><a href="gallery.html">Galería</a> |&nbsp;</li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <h2>Contacto</h2>
+    <section>
+        <form class="datos_personales">
+            <div class="cuadro1">
+            
+                <label for="name" class="font_size">Nombre: </label>
+                <input type="text" name="name" id="datos" required><br>
+                <br>
+                <label for="phone" class="font_size">Teléfono: </label>
+                <input type="tel" name="phone" id="datos" required><br>
+                <br>
+                <label for="email" class="font_size">E-mail: </label>
+                <input type="email" name="email" id="datos" required><br>
+
+            </div>
+
+            <div class="cuadro2">
+
+                <p class="font_size">Tipo de fotografía:</p>
+
+                <label for="photo">Deportiva</label>
+                <input type="radio" name="photo" id="sport">
+
+                <label for="events">Eventos</label>
+                <input type="radio" name="photo" id="events">
+
+                <label for="food">Comida</label>
+                <input type="radio" name="photo" id="food">
+                <br>
+                <br>
+                <label for="video" class="font_size">Grabación y edición de vídeo:</label>
+                <input type="text" name="video" id="video" list="yesno">
+
+                <datalist id="yesno">
+                    <option value="Sí"></option>
+                    <option value="No"></option>
+                </datalist>
+                <br>
+                <br>
+                <label for="fecha" class="font_size">Fecha de contratación:</label>
+                <input type="date" name="fecha" id="fecha">
+                <br>
+                <br>
+                <input type="button" name="button" id="button" value="Enviar">
+            </div>
+        </form>
+    </section>
+    <footer>
+        <a href="https://www.instagram.com/drewiex/" target="_blank"><img src="../Material/ig logo.png" alt="Logo de Instagram" width="50px" height="50px"></a>
+        <p><strong>© 2023 DREWiex, Inc.</strong></p>
+    </footer>        
+</body>
+</html>
