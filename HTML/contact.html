@@ -26,23 +26,18 @@
     <hr>
     <h2>Contacto</h2>
     <section>
-        <form class="datos_personales">
-            <div class="cuadro1">
-            
-                <label for="name" class="font_size">Nombre: </label>
-                <input type="text" name="name" id="datos" required><br>
-                <br>
-                <label for="phone" class="font_size">Teléfono: </label>
-                <input type="tel" name="phone" id="datos" required><br>
-                <br>
-                <label for="email" class="font_size">E-mail: </label>
-                <input type="email" name="email" id="datos" required><br>
+        <form class="formulario">
+            <div>
+                <label for="name" class="font">Nombre: </label>
+                <input type="text" name="name" id="datos"><br><br>
 
-            </div>
+                <label for="phone" class="font">Teléfono: </label>
+                <input type="tel" name="phone" id="datos" maxlength="9" pattern="[0-9]" title="Un número de teléfono válido debe tener 9 dígitos"><br><br>
+                
+                <label for="email" class="font">E-mail: </label>
+                <input type="email" name="email" id="datos"><br>
 
-            <div class="cuadro2">
-
-                <p class="font_size">Tipo de fotografía:</p>
+                <p class="font">Tipo de fotografía:</p>
 
                 <label for="photo">Deportiva</label>
                 <input type="radio" name="photo" id="sport">
@@ -51,22 +46,19 @@
                 <input type="radio" name="photo" id="events">
 
                 <label for="food">Comida</label>
-                <input type="radio" name="photo" id="food">
-                <br>
-                <br>
-                <label for="video" class="font_size">Grabación y edición de vídeo:</label>
+                <input type="radio" name="photo" id="food"><br><br>
+
+                <label for="video" class="font">Grabación y edición de vídeo:</label>
                 <input type="text" name="video" id="video" list="yesno">
 
                 <datalist id="yesno">
                     <option value="Sí"></option>
                     <option value="No"></option>
-                </datalist>
-                <br>
-                <br>
-                <label for="fecha" class="font_size">Fecha de contratación:</label>
-                <input type="date" name="fecha" id="fecha">
-                <br>
-                <br>
+                </datalist><br><br>
+
+                <label for="fecha" class="font">Fecha de contratación:</label>
+                <input type="date" name="fecha" id="fecha"><br><br>
+                
                 <input type="button" name="button" id="button" value="Enviar">
             </div>
         </form>
